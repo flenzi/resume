@@ -56,8 +56,18 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
+
+\newcommand{\resumeSubheadingDescription}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{1pt}
+	\small#5\vspace{-6pt}
+}
+
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -73,7 +83,6 @@
 \newcommand{\resumeItemDescpritionEnd}{\end{itemize}}
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -98,11 +107,11 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
     \resumeSubheading
       {Epam}{Malaga, Spain}
       {Senior Software Engineer}{Feb 2019 -- Present}
+
       \resumeItemListStart
-      
         \resumeItem
           {Corelogic}
-          {Working on Mortgage Analytics and Data Licensing unit. Develop and maintain the services consumed by several applications for generating the mortgages and real state reports.}
+          {Working on Mortgage Analytics and Data Licensing unit. Develop and maintain the services consumed by several applications for generating the mortgages and real state reports. Key developer responsible of the coordination with other teams for new releases, issue resolution and investigation.}
            \resumeItemDescpritionStart
              \item Java, various relational DBs, Redis, PCF
            \resumeItemDescpritionEnd
@@ -114,9 +123,11 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
            \resumeItemDescpritionEnd
       \resumeItemListEnd
 
-    \resumeSubheading
+    \resumeSubheadingDescription
       {Infor}{Buenos Aires, Argentina}
       {Senior Software Engineer}{May 2014 -- Jan 2019}
+      {During my time in the company I got promoted to Technical lead. Leading a team of 4 developers, my roles apart from develop included feature analysis, breakdown and estimation, and mentoring newcomers on the project.}
+      
       \resumeItemListStart
         \resumeItem
           {Connect}
@@ -147,7 +158,6 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
           {Front end development for a social network for homes.}
       \resumeItemListEnd
 
-
     \resumeSubheading
       {Globant}{Tandil, Argentina}
       {Quality Software Engineer}{May 2011 -- Jun 2012}
@@ -160,6 +170,21 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
   \resumeSubHeadingListEnd
 
 
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Java, Bash, Python}
+    }   
+    \item{
+       \textbf{Technologies/Tools}{: Spring (IOC, MVC, Boot, Data), Hibernate, Apache Camel, AWS, Kafka}
+    }       
+    \item{
+       \textbf{Databases}{: Postgres, MySQL, Cassandra, Solr, Redis}
+    }
+  \resumeSubHeadingListEnd
+
+
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -168,8 +193,6 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
       {Bachelor of System Engineering}{2006 -- 2011}
   \resumeSubHeadingListEnd
 
-
-
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
@@ -177,17 +200,4 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
       {Implementation of the famous Truco game with a finite-state machine using Spring Statemachine framework.}
   \resumeSubHeadingListEnd
 
-%
-%--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
-
-
-%-------------------------------------------
 \end{document}
