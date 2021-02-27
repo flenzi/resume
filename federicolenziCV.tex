@@ -7,6 +7,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{scrextend}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -56,7 +57,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubheadingDescription}[5]{
@@ -65,10 +66,8 @@
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{1pt}
-	\small#5\vspace{-6pt}
+	\small#5\vspace{-4pt}
 }
-
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -76,7 +75,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={}, leftmargin=10pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \newcommand{\resumeItemDescpritionStart}{\begin{itemize}}
@@ -98,8 +97,11 @@
 %-----------ABOUT-----------------
 \section{About}
 \small {
-Sofware Engineer interested in working on cloud based scalable solutions. Like to work on environments where learning is promoted. Always open to help other team members and discuss solutions.
-}
+Software Engineer with extensive experience as key developer, team lead and scrum master. Particularly interested in software design and back-end development. Focused on results and client needs, thinking solutions for scalability and performance.
+
+\vspace{2mm} %5mm vertical space
+
+Highly proactive person with good collaboration skills, always willing to help other team members, and discuss solutions. Keen to work in an environment where learning is promoted in order to become a better professional.}
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -113,10 +115,10 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
           {Corelogic}
           {Working on Mortgage Analytics and Data Licensing unit. Develop and maintain the services consumed by several applications for generating the mortgages and real estate reports. Key developer responsible of the coordination with other teams for new releases, issue resolution and investigation.}
            \resumeItemDescpritionStart
-             \item Java, various relational DBs, Redis, PCF
+             \item Java, various relational DBs, Redis, Pivotal Cloud Foundry
            \resumeItemDescpritionEnd
         \resumeItem
-          {Canadian Tire}
+          {Canadian Tire Corporation}
           {Small contribution to improve code quality of the project with an internal tool for database integrity checks. Made presentation to stakeholders before important milestone.}
            \resumeItemDescpritionStart
              \item Java, Reflection, MySQL
@@ -190,16 +192,17 @@ Sofware Engineer interested in working on cloud based scalable solutions. Like t
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingDescription
       {UNICEN}{Tandil, Argentina}
       {Bachelor of System Engineering}{2006 -- 2011}
+      {Relevant courses: Service Oriented Computing, Introduction to Grid Computing, Information Retrieval, Agile Methodologies, Aspect Oriented Programming, Web Tools, Evolutionary computation.}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Truco}
-      {Implementation of the famous Truco game with a finite-state machine using Spring Statemachine framework.}
+      {Implementation of the famous truco game with a finite-state machine.}
   \resumeSubHeadingListEnd
 
 \end{document}
